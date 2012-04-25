@@ -3,7 +3,7 @@
 Plugin Name: Fileviewer
 Plugin URI: http://www.vievern.com/wordpress_plugins
 Description: Fileviewer it is plugin for Wordpress that adds file-manager in your wp-admin panel.
-Version: 1.0b
+Version: 1.1
 Author: Vievern
 Author URI: http://vievern.com
 */
@@ -57,7 +57,7 @@ else
 </form>
 <br><br>
 Fileviewer by <a href="http://www.vievern.com/" target="_blank">Vievern</a><br>
-Figue Icons by <a href="http://p.yusukekamiyamane.com/" target="_blank">Yusuke Kamiyamane</a>
+Fugue Icons by <a href="http://p.yusukekamiyamane.com/" target="_blank">Yusuke Kamiyamane</a>
 <?
 }
 

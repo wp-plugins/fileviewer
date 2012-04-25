@@ -12,7 +12,7 @@ Plugin adds a fileviewer (file manager) to your blog.
 
 Fileviewer it is plugin for Wordpress that adds file-manager in your wp-admin panel.
 
-Fileviewer uses Figue Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com "Yusuke Kamiyamane"). All rights reserved.
+Fileviewer uses Fugue Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com "Yusuke Kamiyamane"). All rights reserved.
 
 == Installation ==
 
@@ -33,6 +33,9 @@ Fileviewer uses Figue Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com
 Fileviewer it is plugin for Wordpress that adds file-manager in your wp-admin panel.
 
 == Changelog ==
+
+= 1.1 =
+* Some bugs fixed
 
 = 1.0 =
 * First release.
