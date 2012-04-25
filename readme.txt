@@ -1,0 +1,43 @@
+=== Fileviewer ===
+Contributors: Vievern
+Donate link: http://www.vievern.com/wordpress_plugins
+Tags: file, files, view, filemanager, explorer, filesystem, viewer, fileviewer
+Requires at least: 3.0
+Tested up to: 3.3.2
+Stable tag: trunk
+
+Plugin adds a fileviewer (file manager) to your blog.
+
+== Description ==
+
+Fileviewer it is plugin for Wordpress that adds file-manager in your wp-admin panel.
+
+Fileviewer uses Fugue Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com "Yusuke Kamiyamane"). All rights reserved.
+
+== Installation ==
+
+1. Upload `fileviewer` folder to the `/wp-content/plugins/` directory.
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Go to `Fileviewer` menu in wp-admin.
+
+== Screenshots ==
+
+1. Fileviewer - Your blog FV
+2. Fileviewer - Options
+3. Fileviewer - Extra Site FV
+
+== Frequently Asked Questions ==
+
+= What is it Fileviewer? =
+
+Fileviewer it is plugin for Wordpress that adds file-manager in your wp-admin panel.
+
+== Changelog ==
+
+= 1.0 =
+* First release.
+
+== Upgrade Notice ==
+
+= 1.0 =
+This version is first release of this plugin.
