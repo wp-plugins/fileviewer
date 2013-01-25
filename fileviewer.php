@@ -3,7 +3,7 @@
 Plugin Name: Fileviewer
 Plugin URI: http://www.vievern.com/wordpress_plugins
 Description: Fileviewer it is plugin for Wordpress that adds file-manager to your wp-admin panel. From 2.0 version - totally rewrited, added file uploading and deleting.
-Version: 2.0
+Version: 2.1
 Author: Vievern
 Author URI: http://vievern.com
 */
