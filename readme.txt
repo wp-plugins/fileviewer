@@ -32,6 +32,10 @@ Fileviewer it is plugin for Wordpress that adds file-manager in your wp-admin pa
 
 == Changelog ==
 
+= 2.1 =
+* Added highlight on new file when it uploaded.
+* Some bugs fixed
+
 = 2.0 =
 * Totally rewrited.
 * Added file uploading.

@@ -8,7 +8,7 @@ Author: Vievern
 Author URI: http://vievern.com
 */
 
-if(basename($_SERVER['SCRIPT_FILENAME']) == 'filewatcher.php' ){
+if(basename($_SERVER['SCRIPT_FILENAME']) == 'fileviewer.php' ){
 die();
 }
 
@@ -38,7 +38,7 @@ if(viev_fw_dircheck($type, $log, $logt)){
 $link = ($type==0 ? $_SERVER["PHP_SELF"].'?page=filewatcher&f=' : '').$thisfold.'/'.$log;
 
 echo '
-<tr class="viev_fw_hoverer">
+<tr class="viev_fw_hoverer'.(($_FILES['viev_fw_file']['name'] == $log) ? ' viev_fw_yelly' : '').'">
 	<td width="20"><a class="viev_fw_urler" href="'.$link.'"'.($type==0 ? '': ' target="_blank"').'><img src="'.$viev_fw_icons.( ($type == 0) ? 'folder.png' : (file_exists('../'.str_replace(site_url(),'',$viev_fw_icons).$logt[1].'.png') ? $logt[1] : 'unknown' ).'.png' ).'"></a></td>
 	<td width="480" style="overflow: hidden;"><a class="viev_fw_urler" href="'.$link.'"'.($type==0 ? '': ' target="_blank"').'>'.$log.'</a></td>';
 
@@ -95,6 +95,9 @@ background: #d7ead5;
 .viev_fw_redy {
 background: #ead5d5;
 }
+.viev_fw_yelly{
+background: #f3f0d5;
+|
 .viev_fw_now td {
 padding-bottom: 5px;
 }
