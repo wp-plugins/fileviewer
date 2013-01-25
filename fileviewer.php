@@ -35,7 +35,7 @@ while($log = readdir($dir)){
 $logt = explode('.',$log);
 if(viev_fw_dircheck($type, $log, $logt)){
 
-$link = ($type==0 ? $_SERVER["PHP_SELF"].'?page=filewatcher&f=' : '').$thisfold.'/'.$log;
+$link = ($type==0 ? $_SERVER["PHP_SELF"].'?page=fileviewer&f=' : '').$thisfold.'/'.$log;
 
 echo '
 <tr class="viev_fw_hoverer'.(($_FILES['viev_fw_file']['name'] == $log) ? ' viev_fw_yelly' : '').'">
@@ -45,7 +45,7 @@ echo '
 	if($type == 0){
 	echo '<td width="200">&nbsp;</td>';
 	} else {
-	echo '<td width="100" align="right"><a href="'.$_SERVER["PHP_SELF"].'?page=filewatcher&f='.$thisfold.'&d='.$log.'"><img src="'.$viev_fw_icons.'deleter.png"></a>';
+	echo '<td width="100" align="right"><a href="'.$_SERVER["PHP_SELF"].'?page=fileviewer&f='.$thisfold.'&d='.$log.'"><img src="'.$viev_fw_icons.'deleter.png"></a>';
 	}
 	
 echo '</tr>';
@@ -188,7 +188,7 @@ $previous = explode('/',$thisfold);
 $previous['size'] = sizeof($previous);
 $previous['last'] = $previous[$previous['size']-1];
 $previous['last'] = str_replace('/'.$previous['last'],'',$thisfold);
-$previous['link'] = $_SERVER["PHP_SELF"].'?page=filewatcher&f='.( $previous['last'] == '..' ? '' : $previous['last'] );
+$previous['link'] = $_SERVER["PHP_SELF"].'?page=fileviewer&f='.( $previous['last'] == '..' ? '' : $previous['last'] );
 
 echo '
 <tr class="viev_fw_hoverer">
@@ -208,8 +208,8 @@ viev_fw_dirget($folder,0,$thisfold,$viev_fw_icons);
 viev_fw_dirget($folder,1,$thisfold,$viev_fw_icons);
 
 echo '
-<div class="viev_fw_upload" id="viev_fw_uploadform">
-<form method="POST" action="'.$_SERVER["PHP_SELF"].'?page=filewatcher&u=true&f='.$thisfold.'" enctype="multipart/form-data">
+<div class="viev_fw_upload" id="viev_fw_uploadform" style="position: fixed;bottom: 50px;right: 20px;">
+<form method="POST" action="'.$_SERVER["PHP_SELF"].'?page=fileviewer&u=true&f='.$thisfold.'" enctype="multipart/form-data">
 <input type="file" id="viev_fw_file" name="viev_fw_file"><input type="submit">
 </form>
 </div>
@@ -232,8 +232,8 @@ function viev_fw_deactivate(){
 }
 
 function viev_fw_menu(){
-add_menu_page('Fileviewer','Fileviewer', 'edit_themes', 'filewatcher', 'viev_fw_manage', plugin_dir_url( __FILE__ ).'icons/folder.png');
-//add_submenu_page('filewatcher','Options', 'Options', 'edit_themes', 'filewatcher_setup', 'viev_fw_setup');
+add_menu_page('Fileviewer','Fileviewer', 'edit_themes', 'fileviewer', 'viev_fw_manage', plugin_dir_url( __FILE__ ).'icons/folder.png');
+//add_submenu_page('fileviewer','Options', 'Options', 'edit_themes', 'fileviewer_setup', 'viev_fw_setup');
 }
 
 // ACTIONS AND HOOKS ACTIVATION

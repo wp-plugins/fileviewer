@@ -1,7 +1,7 @@
 === Fileviewer ===
 Contributors: Vievern
 Donate link: http://www.vievern.com/wordpress_plugins
-Tags: file, files, view, filemanager, explorer, filesystem, viewer, fileviewer
+Tags: file, files, view, filemanager, explorer, filesystem, viewer, fileviewer, upload, uploading, delete, deleting
 Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: trunk
